@@ -16,7 +16,7 @@ public class ProdutoTest {
 
         Produto produto = new Produto();
         produto.setCodigo("01");
-        produto.setNome("Notebook");
+        produto.setNome("Tv");
 
         Integer qtd = dao.cadastrar(produto);
         assertTrue(qtd == 1);
@@ -37,7 +37,7 @@ public class ProdutoTest {
 
         Produto produto = new Produto();
         produto.setCodigo("01");
-        produto.setNome("Notebook");
+        produto.setNome("Tv");
 
         Integer qtd = dao.cadastrar(produto);
         assertTrue(qtd == 1);
@@ -68,12 +68,12 @@ public class ProdutoTest {
 
         Produto produto = new Produto();
         produto.setCodigo("01");
-        produto.setNome("Notebook");
+        produto.setNome("Tv");
 
         Integer qtd = dao.cadastrar(produto);
         assertTrue(qtd == 1);
 
-        produto.setNome("Notebook Atualizado");
+        produto.setNome("Tv Atualizado");
 
         Integer qtdAtualizacao = dao.atualizar(produto);
         assertTrue(qtdAtualizacao == 1);
@@ -93,7 +93,7 @@ public class ProdutoTest {
 
         Produto produto = new Produto();
         produto.setCodigo("01");
-        produto.setNome("Diego");
+        produto.setNome("Pedro");
 
         Integer qtd = dao.cadastrar(produto);
         assertTrue(qtd == 1);

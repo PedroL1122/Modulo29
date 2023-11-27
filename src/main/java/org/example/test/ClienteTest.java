@@ -16,7 +16,7 @@ public class ClienteTest {
 
         Cliente cliente = new Cliente();
         cliente.setCodigo("01");
-        cliente.setNome("Diego");
+        cliente.setNome("Pedro");
 
         Integer qtd = dao.cadastrar(cliente);
         assertTrue(qtd == 1);
@@ -37,7 +37,7 @@ public class ClienteTest {
 
         Cliente cliente = new Cliente();
         cliente.setCodigo("01");
-        cliente.setNome("Diego");
+        cliente.setNome("Pedro");
 
         Integer qtd = dao.cadastrar(cliente);
         assertTrue(qtd == 1);
@@ -68,12 +68,12 @@ public class ClienteTest {
 
         Cliente cliente = new Cliente();
         cliente.setCodigo("01");
-        cliente.setNome("Diego");
+        cliente.setNome("Pedro");
 
         Integer qtd = dao.cadastrar(cliente);
         assertTrue(qtd == 1);
 
-        cliente.setNome("Diego Atualizado");
+        cliente.setNome("Pedro Atualizado");
 
         Integer qtdAtualizacao = dao.atualizar(cliente);
         assertTrue(qtdAtualizacao == 1);
@@ -93,7 +93,7 @@ public class ClienteTest {
 
         Cliente cliente = new Cliente();
         cliente.setCodigo("01");
-        cliente.setNome("Diego");
+        cliente.setNome("Pedro");
 
         Integer qtd = dao.cadastrar(cliente);
         assertTrue(qtd == 1);
